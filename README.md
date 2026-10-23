@@ -1,6 +1,8 @@
 # QA Evidence Gate
 
-**A human-authority protocol for doing QA work alongside AI agents, where nothing is "done" until it is verified and nothing is "verified" until a human has the evidence.**
+**A QA protocol that keeps findings, evidence, and human decisions traceable when working with AI agents.**
+
+QA Evidence Gate defines how an investigation moves from a proposed finding to a reviewed report. It separates observations from expectations, links claims to evidence, preserves corrections, and keeps verification and severity decisions with the human tester.
 
 Status: **v0.1 design concept.** Every gate in this document is provisional until it has been tested on more than one real run (see [Validation plan](#13-validation-plan)). Changes from v0 are recorded in [Revision history](#16-revision-history).
 
@@ -8,7 +10,7 @@ Status: **v0.1 design concept.** Every gate in this document is provisional unti
 
 ## 1. Why this exists
 
-This project started with a timed QA take-home assignment: explore a small React app, find bugs, rank them by severity, and write a report. I ran it alongside a raw, unconfigured AI agent with no system prompt and no rules, then audited everything that happened.
+This project started with a timed QA take-home assignment: explore a small React app, find bugs, rank them by severity, and write a report. I worked alongside an AI agent without a task-specific operating brief, then audited the investigation and submission.
 
 The diagnostic work was strong. The submission was not. The reasons fell into three groups:
 
@@ -16,7 +18,7 @@ The diagnostic work was strong. The submission was not. The reasons fell into th
 - **Human failures (mine).** I let the agent do the manual testing that was the actual job. I let severities go out marked "confirmed" when I knew the ranking was off. I kept my method and reasoning in my head instead of on the record. I argued with the agent instead of redirecting it.
 - **Process failures.** Nothing stopped an unverified claim from reaching the report. Nothing forced expected results to be traced back to the spec. Nothing kept required deliverables ahead of optional work. Nothing kept a later correction from quietly rewriting earlier history.
 
-The reasoning was sound. The **record overwrote the reasoning.** This project is the system that prevents that.
+The central problem was traceability: the final record did not preserve how decisions were reached. QA Evidence Gate proposes a workflow for keeping that reasoning visible, testing claims before they reach a report, and documenting responsibility on both sides.
 
 ## 2. Core principles
 
