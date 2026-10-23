@@ -1,6 +1,6 @@
 # QA Evidence Gate
 
-**Created and designed by [Tyler Katayama](https://github.com/tylerkat89) · [Original project](https://github.com/tylerkat89/qa-evidence-gate)**
+**Created and designed by [Tyler Katayama](https://github.com/tylerkat89) · [Original project](https://github.com/tylerkat89/qa-evidence-gate) · [Repository attribution](ATTRIBUTION.md)**
 
 **A QA protocol that keeps findings, evidence, and human decisions traceable when working with AI agents.**
 
