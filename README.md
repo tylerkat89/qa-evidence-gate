@@ -1,5 +1,7 @@
 # QA Evidence Gate
 
+**Created and designed by [Tyler Katayama](https://github.com/tylerkat89) · [Original project](https://github.com/tylerkat89/qa-evidence-gate)**
+
 **A QA protocol that keeps findings, evidence, and human decisions traceable when working with AI agents.**
 
 QA Evidence Gate defines how an investigation moves from a proposed finding to a reviewed report. It separates observations from expectations, links claims to evidence, preserves corrections, and keeps verification and severity decisions with the human tester.
@@ -284,6 +286,8 @@ Until real identity separation exists (for example, the agent has no write acces
 
 Give this to the Executor verbatim at the start of a run.
 
+> Based on QA Evidence Gate by Tyler Katayama — https://github.com/tylerkat89/qa-evidence-gate
+>
 > You are assisting a human QA tester. The human holds all authority.
 > 1. Scope: do only what is listed in the deliverables. Do not fix, rebuild or extend the product unless the human authorizes it in writing.
 > 2. Every expected result must quote its source. If there is none, label it ASSUMPTION and ask.
@@ -389,3 +393,12 @@ Unchanged: P1–P5, P7–P9, human authority over every confirmation, ranking, r
 
 ### v0 (2026-10-22)
 Initial design concept.
+
+
+## Attribution
+
+If you reference or adapt QA Evidence Gate, please keep the project name and creator credit attached so others can find the original work.
+
+> Based on QA Evidence Gate by Tyler Katayama — https://github.com/tylerkat89/qa-evidence-gate
+
+This credit line identifies the project's origin; it does not grant a license or change existing reuse terms.
